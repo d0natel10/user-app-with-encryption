@@ -1,0 +1,120 @@
+.window {
+    width: 1000px;
+    height: 100vh;
+    background-color: #edf5e1;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 24px;
+    background-color: #05486b;
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .header:hover {
+    background-color: #03364d;
+  }
+  
+  .header__profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .header__profile img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .header__profile h1 {
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+  
+  .header__profile h1:hover {
+    opacity: 0.8;
+  }
+  
+  .header__menuSelects {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .header__menuSelects select {
+    background-image: url('/public/icons/arrow.svg');
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 17px;
+    padding-right: 35px;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #05486b;
+    cursor: pointer;
+    transition: border-color 0.3s, background-color 0.3s;
+    appearance: none;
+    width: 150px;
+    transition: background-position 0.3s ease;
+  }
+
+  .header__menuSelects select:hover {
+    border-color: #44515f;
+    background-color: #e9ecef;
+  } 
+
+  .header__menuSelects select::-ms-expand {
+    display: none; 
+  }
+  
+  .header__menuSelects select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header__menuSelects select::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .header__menuSelects select::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+  }
+  
+  .header__menuSelects select::-webkit-scrollbar-thumb {
+    background-color: #05486b;
+    border-radius: 6px;
+  }
+  
+  .header__button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #05486b;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .header__button:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .header__button:active {
+    background-color: #f1f1f1;
+  }
